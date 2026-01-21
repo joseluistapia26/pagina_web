@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   box-sizing: border-box;
 }
@@ -6,8 +7,10 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f2f2f2;
+  color: #111;
 }
 
+/* Contenedor principal */
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -18,6 +21,37 @@ body {
   text-align: center;
 }
 
+/* Título */
+.container h1 {
+  margin: 0 0 14px;
+}
+
+/* Barra superior (botón volver) */
+.top-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 14px;
+}
+
+/* Botón volver (link estilizado) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #111;
+  color: #fff;
+  transition: opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Video responsive */
 .video-responsive {
   position: relative;
   width: 100%;
@@ -35,33 +69,15 @@ body {
   border: 0;
 }
 
+/* Texto inferior */
 .hint {
   margin-top: 14px;
   font-size: 14px;
   color: #444;
 }
 
-a {
+/* Links dentro del texto */
+.hint a {
   color: #0b57d0;
   text-decoration: underline;
 }
-.top-actions{
-  display: flex;
-  justify-content: flex-start;
-  margin: 10px 0 14px;
-}
-
-.btn{
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  background: #111;
-  color: #fff;
-}
-
-.btn:hover{
-  opacity: 0.9;
-}
-
